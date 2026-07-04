@@ -119,10 +119,10 @@ do
   vim.o.showmode = false
  
   -- Tab related
-  vim.opt.tabstop = 4
-  vim.opt.shiftwidth = 4
+  vim.opt.tabstop = 2
+  vim.opt.shiftwidth = 2
   vim.opt.expandtab = true
-  vim.opt.softtabstop = 4
+  vim.opt.softtabstop = 2
 
   -- Sync clipboard between OS and Neovim.
   --  Schedule the setting after `UiEnter` because it can increase startup-time.
@@ -1010,6 +1010,7 @@ do
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   require 'custom.plugins'
+  require 'custom.font_fix'
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
